@@ -274,6 +274,28 @@ header {
   font-size: 15px;
 }
 
+/* === working-exp === */
+.work-exp {
+  position: relative !important;
+}
+/* .work-exp .card-header .flex {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  height: 200px !important;
+} */
+.work-exp .card-header #work-icon{
+  position: absolute;
+  top: -22%;
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee8683;
+}
+
 /* === education === */
 .accordion {
   font-weight: bold;
