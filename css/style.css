@@ -147,6 +147,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 #home .element {
@@ -414,7 +415,7 @@ footer .r-icon a:hover {
 /* == SVG Wave at header section === */
 .custom-shape-divider-bottom-1661646782 {
   position: absolute;
-  bottom: 0;
+  bottom: -1%;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -425,7 +426,9 @@ footer .r-icon a:hover {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 80px;
+  height: 100px;
+  /* overflow-x: hidden; */
+  /* margin-top: 500px; */
 }
 
 .custom-shape-divider-bottom-1661646782 .shape-fill {
@@ -436,6 +439,6 @@ footer .r-icon a:hover {
 @media (min-width: 768px) and (max-width: 1023px) {
   .custom-shape-divider-bottom-1661646782 svg {
       width: calc(140% + 1.3px);
-      height: 53px;
+      height: 120px;
   }
 }
