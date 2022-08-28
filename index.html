@@ -29,7 +29,7 @@
   <div class="circle"></div>
 </div>
 
-<!-- === navbar === -->
+<!-- === navbar section start === -->
   <nav class="navbar navbar-expand-lg sticky r-nav fixed-top">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarId">
@@ -37,33 +37,37 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarId">
         <ul class="navbar-nav m-auto">
-          <li class="nav-item">
+          <li class="nav-item list active">
             <a href="#home" class="nav-link">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
             <a href="#about" class="nav-link">About</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
             <a href="#exp-id" class="nav-link">Skills</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
             <a href="#services-id" class="nav-link">Services</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
+            <a href="#work-exp" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item list">
             <a href="#testimony-id" class="nav-link">Client</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
             <a href="#works" class="nav-link">Portfolio</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item list">
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- === navbar section end === -->
   
-  <!-- ===== header section ===== -->
+  <!-- ===== header section start ===== -->
   <header id="home">
     <div class="container-fluid header-content">
       <div class="row">
@@ -79,6 +83,15 @@
       </div>
     </div>
   </header>
+  <!-- ===== header section end ===== -->
+
+  <!-- === SVG Wave start === -->
+  <div class="custom-shape-divider-bottom-1661646782">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+    </svg>
+  </div>
+  <!-- === SVG Wave end === -->
 
   <!-- === about section === -->
   <section class="about r-p" id="about">
@@ -106,9 +119,9 @@
       </div>
     </div>
   </section>
+  <!-- === about section end === -->
 
-
-  <!-- === experience section === -->
+  <!-- === experience section start === -->
   <section class="exp-class r-p" id="exp-id">
     <div class="container">
       <div class="row">
@@ -162,9 +175,9 @@
       </div>
     </div>
   </section>
+  <!-- === experience section end === -->
 
-
-  <!-- === services section === -->
+  <!-- === services section start === -->
   <section class="services-class bg-sec r-p text-center" id="services-id">
     <div class="container">
       <div class="row">
@@ -256,12 +269,13 @@
 
     </div>
   </section>
+  <!-- === services section end === -->
   
-  <!-- === education section === -->
+  <!-- === education section start === -->
     <section class="exp-class r-p" id="exp-id">
       <div class="container">
         <div class="row p-3 d-flex justify-content-between">
-          <div class="col-lg-7" data-aos="fade-right">
+          <div class="col-lg-7" data-aos="zoom-in">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -366,8 +380,8 @@
           </div>
 
           <div
-            class="col-lg-4 mt-3 d-flex justify-content-center align-items-center skill"
-            data-aos="fade-left"
+            class="col-lg-5 mt-3 d-flex justify-content-center align-items-center skill"
+            data-aos="zoom-in"
           >
             <h3>Education</h3>
           </div>
@@ -377,42 +391,78 @@
     <!-- === education section end === -->
 
     <!-- === work experineces section start === -->
-    <section class="work-exp bg-sec r-p">
+    <section class="work-exp bg-sec r-p" id="work-exp">
       <div class="container">
-        <h3 class="text-center pb-4">Working Experience</h3>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card">
-              <div class="card-header text-light flex">
-                <i class="far fa-edit fa-2x" id="work-icon"></i>
-              </div>
-              <div class="card-body pt-5">
-                <h5 class="card-title">SEO Services</h5>
-                <div class="service-border"></div>
-                <p class="lead card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, maxime?</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
+        <h3 class="text-center pb-5">Working Experience</h3>
+
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-lg-5 mb-4" data-aos="zoom-in">
             <div class="card">
               <div class="card-header">
-                <i class="far fa-edit"></i>
+                <i class="fa fa-pencil work-icon"></i>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">SEO Services</h5>
+              <div class="card-body py-3">
+                <h5 class="card-title">Senior Software Engineer</h5>
                 <div class="service-border"></div>
-                <p class="lead card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, maxime?</p>
+                <p class="lead card-text edu1">APTech Institute, Abuja, Nigeria</p>
+                <p class="lead card-text edu2">2019 - 2022</p>
+                <p class="lead card-text edu2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur recusandae necessitatibus nostrum, laboriosam molestiae officiis?</p>
               </div>
             </div>
           </div>
+          <div class="col-lg-5 mb-4" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-pencil work-icon"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title">Senior Software Engineer</h5>
+                <div class="service-border"></div>
+                <p class="lead card-text edu1">APTech Institute, Abuja, Nigeria</p>
+                <p class="lead card-text edu2">2019 - 2022</p>
+                <p class="lead card-text edu2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur recusandae necessitatibus nostrum, laboriosam molestiae officiis?</p>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div class="row mt-2 d-flex justify-content-center align-items-center">
+          <div class="col-lg-5 mb-4" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-pencil work-icon"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title">Senior Software Engineer</h5>
+                <div class="service-border"></div>
+                <p class="lead card-text edu1">APTech Institute, Abuja, Nigeria</p>
+                <p class="lead card-text edu2">2019 - 2022</p>
+                <p class="lead card-text edu2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur recusandae necessitatibus nostrum, laboriosam molestiae officiis?</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 mb-4" data-aos="zoom-in">
+            <div class="card">
+              <div class="card-header">
+                <i class="fa fa-pencil work-icon"></i>
+              </div>
+              <div class="card-body py-3">
+                <h5 class="card-title">Senior Software Engineer</h5>
+                <div class="service-border"></div>
+                <p class="lead card-text edu1">APTech Institute, Abuja, Nigeria</p>
+                <p class="lead card-text edu2">2019 - 2022</p>
+                <p class="lead card-text edu2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur recusandae necessitatibus nostrum, laboriosam molestiae officiis?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
-    <!-- === work experineces section end === -->
+    <!-- === work experience section end === -->
 
-   <!-- === hire me section ===  -->
-    <section class="hire-me r-p bg-sec" id="hire-me">
+   <!-- === hire me section start === -->
+    <section class="hire-me r-p" id="hire-me">
       <div class="container text-center">
         <div class="row">
           <div class="col" data-aos="zoom-in">
@@ -422,9 +472,10 @@
         </div>
       </div>
     </section>
+    <!-- === hire me section end === -->
 
-    <!-- === testimonial === -->
-    <section class="testimony-class r-p" id="testimony-id">
+    <!-- === testimonial start === -->
+    <section class="testimony-class r-p bg-sec" id="testimony-id">
       <div class="container text-center">
         <div class="row">
           <div class="col">
@@ -509,8 +560,8 @@
       </div>
     </section>
 
-    <!-- === works === -->
-    <section class="work r-p bg-sec" id="works">
+    <!-- === works section start === -->
+    <section class="work r-p" id="works">
       <div class="container text-center">
         <div class="row">
           <div class="col mb-5" data-aos="fade-up">
@@ -594,9 +645,10 @@
         </div>
       </div>
     </section>
+    <!-- === works section end === -->
 
-    <!-- === contact section === -->
-    <section class="contact r-p" id="contact">
+    <!-- === contact section start === -->
+    <section class="contact r-p bg-sec" id="contact">
       <div class="container text-center">
         <div class="row">
           <div class="col" data-aos="zoom-in">
@@ -674,8 +726,9 @@
         </div>
       </div>
     </section>
+    <!-- === contact section end === -->
 
-    <!-- === footer === -->
+    <!-- === footer section start=== -->
     <footer>
       <div
         class="container h-100 d-flex align-items-center justify-content-center"
@@ -706,6 +759,7 @@
         </div>
       </div>
     </footer>
+    <!-- === footer section end === -->
 
     <script src="lib/typed.js"></script>
     <script src="lib/jquery.min.js"></script>

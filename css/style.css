@@ -1,8 +1,21 @@
 /* ==== base rules ==== */
-
 * {
   margin: 0;
   padding: 0;
+}
+/* === variables === */
+:root {
+  --white: #fff;
+  --black: #000;
+  --veryDarkGray: #333;
+  --darkGray: #6c757d;
+  --grey: #848484;
+  --lightGray: #d4d4d4;
+  --gray: #eee;
+  --light: #f8f9fa;
+  --veryDarkPink: #e65f78;
+  --darkPink: #ee8683;
+  --lightPink: #ee8686;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -17,7 +30,7 @@ p {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: #6c757d;
+  color: var(--darkGray);
 }
 
 a {
@@ -31,13 +44,13 @@ a {
 }
 
 .bg-sec {
-  background: #f8f9fa;
+  background: var(--light);
 }
 
 .r-btn {
   padding: 5px 20px;
-  background: #ee8683 !important;
-  color: #fff;
+  background: var(--darkPink) !important;
+  color: var(--white);
 }
 
 /* === pre-loader === */
@@ -47,7 +60,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background: var(--black);
   z-index: 99998;
 }
 
@@ -63,8 +76,8 @@ a {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 10px solid #000;
-  border-top: 10px solid #ee8683;
+  border: 10px solid var(--black);
+  border-top: 10px solid var(--darkPink);
   animation: animate 1.5s infinite linear;
   z-index: 99999;
 }
@@ -80,16 +93,12 @@ a {
 body {
   overflow: auto;
 }
+
 /* === navbar section === */
 nav.r-nav {
   background: transparent;
   padding: 20px 0;
   transition: 0.5s all;
-}
-
-nav .navbar-brand {
-  font-size: 30px;
-  color: #fff;
 }
 
 nav .navbar-nav li a {
@@ -104,34 +113,33 @@ nav .navbar-nav li {
   margin-left: 15px;
 }
 
+nav .navbar-nav li a:hover,
+nav.stickyadd .navbar-nav .nav-link:hover {
+  color: var(--veryDarkPink) !important;
+  transition: all 1s ease;
+}
+
 nav.r-nav.stickyadd {
-  background: #fff !important;
+  background: var(--gray) !important;
   padding: 15px 0;
   box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   transition: .5 all ease-in-out;
 }
 
-nav.stickyadd .navbar-brand {
-  color: #000;
-  font-size: 40px;
-  transition: .5s all;
-}
-
 nav.stickyadd .navbar-nav .nav-link {
-  color: #000 !important;
+  color: var(--veryDarkGray) !important;
 }
 
 .navbar .hamburger {
-  color: #fff;
+  color: var(--white);
 }
 
 nav.stickyadd .hamburger {
-  color: #000;
+  color: var(--black);
 }
 /* ==== nav section end ===== */
 
 /* ==== header section start ==== */
-
 header {
   height: 100vh;
   width: 100%;
@@ -142,7 +150,7 @@ header {
 }
 
 #home .element {
-  color: #ee8683;
+  color: var(--darkPink);
   font-size: bold;
 }
 
@@ -156,7 +164,7 @@ header {
 
 .content-box {
   max-width: 700px;
-  color: #fff;
+  color: var(--white);
 }
 
 .content-box h4 {
@@ -168,22 +176,22 @@ header {
 }
 
 .content-box a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
-  border: 4px solid #fff;
+  border: 4px solid var(--white);
   border-radius: 20px;
   padding: 5px 25px;
 }
 
 .content-box a:hover {
-  color: #000;
-  border: 4px solid #fff;
-  background: #fff;
+  color: var(--black);
+  border: 4px solid var(--white);
+  background: var(--white);
   transition: .5s all;
 }
 
 .content-box p {
-  color: #fff;
+  color: var(--white);
 }
 
 /* === header section end === */
@@ -191,12 +199,12 @@ header {
 /* === about section start === */
 
 .about li a {
-  color: #000;
+  color: var(--black);
   display: inline-block;
   height: 42px;
   width: 42px;
   font-size: 20px;
-  border: 2px solid #d4d4d4;
+  border: 2px solid var(--lightGray);
   border-radius: 50%;
   line-height: 40px;
   transition: 0.5s all;
@@ -204,7 +212,7 @@ header {
 }
 
 .about li a:hover {
-  color: #ee8683;
+  color: var(--darkPink);
 }
 
 /* === about section end === */
@@ -218,7 +226,7 @@ header {
 }
 
 .progress-bar {
-  background: #ee8686 !important;
+  background: var(--lightPink) !important;
 }
 
 .exp-class label {
@@ -236,7 +244,7 @@ header {
 
 /* === service section === */
 .card, .card-header {
-  background: #f8f9fa !important;
+  background: var(--light) !important;
 }
 
 .card-header {
@@ -251,7 +259,7 @@ header {
   height: 2px;
   width: 40px;
   margin: 15px auto;
-  background: #e65f78;
+  background: var(--veryDarkPink);
 }
 
 /* === testimony section === */
@@ -267,7 +275,7 @@ header {
 }
 
 .testimony-class .test-item i {
-  color: grey;
+  color: var(--darkGray);
 }
 
 .test-item p.lead {
@@ -278,53 +286,57 @@ header {
 .work-exp {
   position: relative !important;
 }
-/* .work-exp .card-header .flex {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  height: 200px !important;
-} */
-.work-exp .card-header #work-icon{
+
+.work-exp .card-header .work-icon{
   position: absolute;
-  top: -22%;
-  width: 80px;
-  height: 80px;
+  top: -12%;
+  width: 60px;
+  height: 60px;
   border-radius: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ee8683;
+  background: var(--darkPink);
+  color: var(--white);
 }
 
+.work-exp .edu1 {
+  font-size: 16px !important;
+  margin-bottom: -5px;
+}
+.work-exp .edu2 {
+  font-size: 14px !important;
+  /* margin-top: -15px; */
+}
 /* === education === */
 .accordion {
   font-weight: bold;
   border: none !important;
-  background-color: #fff !important;
+  background-color: var(--white) !important;
 }
 .accordion-item {
-  background-color: #fff !important;
+  background-color: var(--white) !important;
   border: none !important;
   padding: 5px;
 }
 .accordion .accordion-button {
-  background: #f8f9fa !important;
-  color: #000 !important;
+  background: var(--light) !important;
+  color: var(--black) !important;
   font-weight: 500;
   text-transform: uppercase;
 }
 .accordion .accordion-body {
-  color: #333 !important;
-  background-color: #fff;
+  color: var(--veryDarkGray) !important;
+  background-color: var(--white);
 }
 .accordion .accordion-body h4 {
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 .accordion .accordion-body h5 {
-  font-size: 12px !important;
+  font-size: 14px !important;
 }
 .accordion .accordion-body h6 {
-  font-size: 10px !important;
+  font-size: 13px !important;
 }
 
 /* === works === */
@@ -353,7 +365,7 @@ header {
 }
 .work-img:hover a.preview {
   opacity: 1;
-  color: #e65f78;
+  color: var(--veryDarkPink);
   top: 1%;
   left: 1%; 
   transition: .5s;
@@ -361,11 +373,12 @@ header {
 
 .work-img:hover a.github {
   opacity: 1;
-  color: #e65f78;
+  color: var(--veryDarkPink);
   top: 10%;
   left: 1%; 
   transition: .5s;
 }
+
 /* === contact section === */
 .contact .r-icon {
   font-size: 50px;
@@ -374,24 +387,55 @@ header {
 .contact p.conts {
   font-size: 16px;
 }
-
+.active a {
+  color: var(--lightPink);
+}
 /* === footer === */
 
 footer {
   height: 200px;
-  background: #333;
+  background: var(--veryDarkGray);
 }
 
 footer .r-icon a {
   font-size: 20px;
-  color: #848484;
+  color: var(--grey);
   padding: 10px;
-  border: 1px solid #848484;
+  border: 1px solid var(--grey);
   border-radius: 50%;
 }
 
 footer .r-icon a:hover {
-  border: 1px solid #eee;
-  color: #eee;
+  border: 1px solid --gray;
+  color: --gray;
   transition: all .5s;
+}
+
+/* == SVG Wave at header section === */
+.custom-shape-divider-bottom-1661646782 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1661646782 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px;
+}
+
+.custom-shape-divider-bottom-1661646782 .shape-fill {
+  fill: var(--white);
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1661646782 svg {
+      width: calc(140% + 1.3px);
+      height: 53px;
+  }
 }
