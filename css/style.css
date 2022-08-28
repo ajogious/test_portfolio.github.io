@@ -147,7 +147,19 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
+  position: relative;
+}
+
+header::after {
+  content: '';
+  width: 100%;
+  height: 200px;
+  background: var(--white);
+  display: block;
+  transform: skewY(3deg);
+  position: absolute;
+  bottom: -15%;
+  left: 0;
 }
 
 #home .element {
@@ -198,6 +210,9 @@ header {
 /* === header section end === */
 
 /* === about section start === */
+.about {
+  margin-top: 30px;
+}
 
 .about li a {
   color: var(--black);
@@ -215,7 +230,6 @@ header {
 .about li a:hover {
   color: var(--darkPink);
 }
-
 /* === about section end === */
 
 /* === experience section start === */
@@ -410,35 +424,4 @@ footer .r-icon a:hover {
   border: 1px solid --gray;
   color: --gray;
   transition: all .5s;
-}
-
-/* == SVG Wave at header section === */
-.custom-shape-divider-bottom-1661646782 {
-  position: absolute;
-  bottom: -1%;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1661646782 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 100px;
-  /* overflow-x: hidden; */
-  /* margin-top: 500px; */
-}
-
-.custom-shape-divider-bottom-1661646782 .shape-fill {
-  fill: var(--white);
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
-  .custom-shape-divider-bottom-1661646782 svg {
-      width: calc(140% + 1.3px);
-      height: 120px;
-  }
 }
